@@ -1,0 +1,482 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    /* background-color: white; */
+}
+
+/* .darkMode
+{
+    background-color: black;
+    color: white;
+} */
+
+li
+{
+    list-style-type: none;
+    padding: 10px;
+}
+
+a
+{
+    font-weight: 900;
+    font-family: monospace;
+    color: white;
+    text-decoration: none;
+}
+
+.header
+{
+    width: 100%;
+    background-color: rgb(36, 25, 58);
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.headerDark
+{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+}
+
+.headerDark
+{
+    top: 0;
+}
+
+/* footer
+{
+    padding-top: 20px;
+    color: cornsilk;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 20px;
+    background-color: rgb(36, 25, 58);
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    bottom: 0;
+} */
+
+.foot
+{
+    padding-top: 15px;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    background-color: rgb(36, 25, 58);
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    bottom: 0;
+}
+
+.footDark
+{
+    padding-top: 20px;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    bottom: 0;
+}
+
+
+.header
+{
+    top: 0;
+}
+
+.judul
+{
+    margin-left: 20px;
+    font-family:  monospace;
+    font-weight: 700;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#nama1
+{
+    color: white;
+}
+
+#nama2
+{
+    color:crimson;
+}
+
+.navigator
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#mf
+{
+    font-family: monospace;
+    text-align: center;
+    font-size: 25px;
+}
+
+.navigator > li:hover
+{
+    background-color: rgb(18, 12, 31);
+    transition: all .2s ease-in-out;
+    border-radius: 8px;
+}
+
+.navigator > input
+{
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.colorfont
+{
+    color: crimson;
+}
+
+.containDarkmode
+{
+    margin-top: 101px;
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+
+.contain
+{
+    margin-top: 101px;
+    background-color: #E6E6E6;
+    color: black;
+}
+
+.inputBox
+{
+    width: 800px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.inputText input
+{
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: groove;
+    width: 300px;
+    height: 30px;
+    background-color: rgb(216, 216, 216)c;
+}
+
+.inputBtn
+{
+    border-style: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: crimson;
+}
+
+.gallery
+{
+    margin: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 180px;
+    width: 200%;
+}
+
+.illustration
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #3d3d3d;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #3d3d3d;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+
+/* .illustration > div
+{
+    background-color: rgb(36, 36, 36);
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid rgb(36, 25, 58);
+} */
+
+
+#title
+{
+    font-family: monospace;
+    font-size: 50px;
+    padding: 12px;
+    text-align: center;
+}
+
+#in
+{
+    font-size: 20px;
+}
+
+.illustration > div > a > img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.illustration > div > a:hover
+{
+    opacity: 0.5;
+    transition: all .2s ease-in-out;
+}
+
+.illustration div > i
+{
+    color: rgb(201, 29, 58);
+}
+
+.illustration div > p
+{
+    font-family: monospace;
+}
+
+
+
+.item
+{
+    padding: 25px;
+
+}
+
+.item > a > img
+{
+    border-radius: 8px;
+}
+
+.hp
+{
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 30px;
+    color: cornsilk;
+}
+
+
+hr
+{
+    color: black;
+}
+.img1
+{
+
+    font-family: monospace;
+}
+
+.img1 > img
+{
+    width: 20%;
+}
+
+#item > a > img
+{
+    width: 100%;
+}
+
+
+#item > a:hover
+{
+    opacity: 0.5 ;
+    transition: all .2s ease-in-out;
+}
+
+#homepage
+{
+    padding: 20px;
+    font-weight: 800;
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+#in
+{
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* style aboutme */
+.myPicture
+{
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    
+}
+
+.myPicture > img
+{
+    width: 10%;
+    border-radius: 50%;
+}
+
+
+.icon
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.icon > a > img
+{
+    width: 2%;
+}
+
+.myArt
+{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.login-box
+{
+    font-family: monospace;
+    font-size: 20px;
+    background-color: white;
+    height: 370px;
+    padding-top: 50px;
+    text-align: center;
+    width: 370px;
+    border-radius: 10px;
+    margin-left: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);    
+}
+
+.login-box input
+{
+    width: 270px;
+    border: none;
+    background-color: #fafafa;
+    border-bottom-style: solid;
+    border-width: 1px;
+    height: 29px;
+}
+
+.login-btn
+{
+    width: 274px;
+    color: white;
+    background-color: crimson;
+    height: 26px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar input
+{
+    margin-left: 450px;
+    margin-bottom: 30px;
+    width: 400px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn-search
+{
+    height: 33px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
